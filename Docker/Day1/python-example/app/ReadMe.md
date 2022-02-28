@@ -24,7 +24,7 @@ $  pip install -r requirements.txt
 
 ## Create Docker Image
 ```
- $ docker build --tag python-docker .
+ $ docker build --tag falcon007/python-docker .
 ```
 
 

@@ -51,7 +51,7 @@ $ mvn spring-boot:run
 
 
 ```
- $ docker run -p 8089:8089 --name java-app falcon007/simple-spring-boot:0.0.1
+ $ docker run -p 8089:8089 --name java-app falcon007/simple-spring-boot:1.0.0
 
 Background Running
 

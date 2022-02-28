@@ -90,7 +90,7 @@ docker push <repository-name>/springsecurity
 
 docker push falcon007/simple-spring-boot:0.0.1
 ```
-
+.idea
 ## View docker image
 
 ```

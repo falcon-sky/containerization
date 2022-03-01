@@ -14,6 +14,11 @@ public class GreetController {
   public String getPathVar(@PathVariable("name") String name) {
     return "Hello:" + name;
   }
+
+  @GetMapping("/java")
+  public String getPathVar() {
+    return "Hello from java";
+  }
 }
 
 

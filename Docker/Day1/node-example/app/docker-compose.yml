@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  node-app:
+    image: falcon007/node-docker:latest
+    ports:
+      - "8082:3000"

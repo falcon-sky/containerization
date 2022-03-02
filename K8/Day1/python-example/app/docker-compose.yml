@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  python-app:
+    image: falcon007/python-docker:latest
+    ports:
+      - "8083:5000"

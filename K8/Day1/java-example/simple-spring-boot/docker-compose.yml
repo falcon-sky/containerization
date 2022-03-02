@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  java-app:
+    image: falcon007/simple-spring-boot:1.0.0
+    ports:
+      - "8081:8089"

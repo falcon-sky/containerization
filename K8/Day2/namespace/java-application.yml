@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: security-deployment
-  namespace: java
+  name: java-deployment
+  namespace: java-namespace
   labels:
-    app: springsecurity
+    app: java-app
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: springsecurity
+      app: java-app
   template:
     metadata:
       labels:
-        app: springsecurity
+        app: java-app
     spec:
       containers:
-        - name: springsecurity
+        - name: java-app
           image: falcon007/simple-spring-boot:1.0.0
           ports:
             - containerPort: 8089

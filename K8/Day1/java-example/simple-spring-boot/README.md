@@ -127,4 +127,5 @@ kubectl expose deployment security-deployment --type=LoadBalancer --name=rama-se
 kubectl get services rama-service
 kubectl describe services rama-service
 kubectl delete -f security-application.yml
+
 ```

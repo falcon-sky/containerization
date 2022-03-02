@@ -93,3 +93,17 @@ https://hub.docker.com/
 ```
  $ docker run -d -p 3000:3000 --name node-app falcon007/node-docker:latest
 ```
+
+### Running the application using Kubernetes.
+
+```
+kubectl create -f node-application.yml
+kubectl get pods
+kubectl get deployment
+kubectl describe deployments node-deployment
+docker ps
+kubectl expose deployment node-deployment --type=LoadBalancer --name=rama-service
+kubectl get services rama-service
+kubectl describe services rama-service
+kubectl delete -f node-application.yml
+```

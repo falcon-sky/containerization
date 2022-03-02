@@ -91,4 +91,16 @@ https://hub.docker.com/
  $ docker run -d -p 3000:3000 --name python-app falcon007/python-docker:latest
 ```
 
+### Running the application using Kubernetes.
 
+```
+kubectl create -f python-application.yml
+kubectl get pods
+kubectl get deployment
+kubectl describe deployments python-deployment
+docker ps
+kubectl expose deployment python-deployment --type=LoadBalancer --name=rama-service
+kubectl get services rama-service
+kubectl describe services rama-service
+kubectl delete -f python-application.yml
+```

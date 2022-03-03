@@ -16,6 +16,7 @@ kubectl create -f node-application.yml
 kubectl create -f python-application.yml
 ```
 ## Get access to deployement
+
 ```
 kubectl get deployment -n java-namespace
 kubectl get deployment -n node-namespace

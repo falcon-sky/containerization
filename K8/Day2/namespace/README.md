@@ -24,3 +24,9 @@ kubectl get deployment -n python-namespace
 
 ```
 ## Get access to pods
+
+```
+kubectl get pods -n java-namespace
+kubectl get pods -n node-namespace
+kubectl get pods -n python-namespace
+```

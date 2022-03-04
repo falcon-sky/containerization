@@ -1,5 +1,19 @@
 version: '3.3'
 services:
+  mysql-app:
+    image: falcon007/third-mysql-app:0.0.1-SNAPSHOT
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql-db
+    environment:
+      - DATABASE_HOST=mysql-db
+      - DATABASE_USER=user
+      - DATABASE_PASSWORD=password
+      - DATABASE_NAME=db
+      - DATABASE_PORT=3306
+    networks:
+      - my-network
   mysql-db:
     image: mysql:5.7
     restart: always
@@ -20,6 +34,12 @@ services:
       # Where our data will be persisted
     volumes:
       - my-db:/var/lib/mysql
+    networks:
+      - my-network
 # Names our volume
+networks:
+  my-network:
+    driver: bridge
+
 volumes:
   my-db:

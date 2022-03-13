@@ -1,0 +1,28 @@
+version: "3.9"
+services:
+  java-app:
+    image: falcon007/simple-spring-boot:1.0.0
+    ports:
+      - "8081:8089"
+    depends_on:
+      - python-app
+    networks:
+      - tcs-network
+  node-app:
+    image: falcon007/node-docker:latest
+    ports:
+      - "8082:3000"
+    depends_on:
+      - java-app
+    networks:
+      - tcs-network
+  python-app:
+    image: falcon007/python-docker:latest
+    ports:
+      - "8083:5000"
+    networks:
+      - tcs-network
+
+networks:
+  tcs-network:
+    driver: bridge

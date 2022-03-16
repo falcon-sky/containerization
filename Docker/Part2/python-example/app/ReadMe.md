@@ -28,11 +28,11 @@ $  pip install -r requirements.txt
 ```
 ## Run Docker image
 ```
- $ docker run -p 3000:3000 --name python-app falcon007/python-docker:latest
+ $ docker run -p 5000:5000 --name python-app falcon007/python-docker:latest
 
 Background Running
 
- $ docker run -d -p 3000:3000 --name python-app falcon007/python-docker:latest
+ $ docker run -d -p 5000:5000 --name python-app falcon007/python-docker:latest
 ```
 
 ## Test Running Container
@@ -88,7 +88,7 @@ https://hub.docker.com/
 ## Pull Docker image while running
 
 ```
- $ docker run -d -p 3000:3000 --name python-app falcon007/python-docker:latest
+ $ docker run -d -p 3000:5000 --name python-app falcon007/python-docker:latest
 ```
 
 

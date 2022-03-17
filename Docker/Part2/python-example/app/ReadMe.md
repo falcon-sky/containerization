@@ -13,6 +13,22 @@ $  pip install -r requirements.txt
 ```
  $ python app.py
 ```
+# Test
+## Testing with url
+```
+http://10.0.0.4:5000/python
+http://10.0.0.4:5000/version
+http://10.0.0.4:5000/myname
+
+http://127.0.0.1:5000/python
+http://127.0.0.1:5000/version
+http://127.0.0.1:5000/myname
+
+http://localhost:5000/python
+http://localhost:5000/version
+http://localhost:5000/myname
+
+```
 
 # Dockerising The Node App
 
@@ -38,7 +54,7 @@ Background Running
 ## Test Running Container
 
 ```
- http://localhost:5000/hello
+ http://localhost:5000/python
 ```
 
 ## Stop Docker Container

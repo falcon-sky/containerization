@@ -57,7 +57,7 @@ $ docker push falcon007/simple-spring-boot
 
 Background Running
 
- $ docker run -d -p 8089:8089 --name java-app falcon007/simple-spring-boot:0.0.1
+ $ docker run -d -p 8089:8089 --name java-app falcon007/simple-spring-boot:1.0.0
 ```
 
 ## Testing
@@ -76,7 +76,7 @@ $  docker stop java-app  # Or container ID
 ## Tag Docker Image
 
 ```
- $ docker tag falcon007/simple-spring-boot:0.0.1 node-docker:v1.0.0
+ $ docker tag falcon007/simple-spring-boot:1.0.0 node-docker:v1.0.0
 ```
 
 ## Untagged docker image
@@ -90,7 +90,7 @@ $  docker stop java-app  # Or container ID
 ```
 docker push <repository-name>/springsecurity
 
-docker push falcon007/simple-spring-boot:0.0.1
+docker push falcon007/simple-spring-boot:1.0.0
 ```
 .idea
 ## View docker image
@@ -108,11 +108,11 @@ https://hub.docker.com/
 ## Pull Docker image
 
 ```
- $ docker pull falcon007/simple-spring-boot:0.0.1
+ $ docker pull falcon007/simple-spring-boot:1.0.0
 ```
 
 ## Pull Docker image while running
 
 ```
- $ docker run -d -p 3000:3000 --name node-app falcon007/simple-spring-boot:0.0.1
+ $ docker run -d -p 3000:3000 --name node-app falcon007/simple-spring-boot:1.0.0
 ```

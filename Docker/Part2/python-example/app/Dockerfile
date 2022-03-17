@@ -13,6 +13,9 @@ COPY . /usr/src/app
 # Install required dependency
 RUN pip3 install -r requirements.txt
 
+#Expose the port the app runs in
+EXPOSE 5000
+
 # Provide the instruction to start application or Entrypoint to start the application
 ENTRYPOINT ["python"]
 

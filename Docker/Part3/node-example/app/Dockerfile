@@ -8,12 +8,12 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Copy dependency and app code
-COPY package*.json app.js ./
+COPY package*.json app.js /usr/src/app
 
 # Install dependencies
 RUN npm install
 
-#Expose the sport the app runs in
+#Expose the port the app runs in
 EXPOSE 3000
 
 # Provide the instruction to start application or Entrypoint to start the application

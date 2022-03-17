@@ -93,3 +93,8 @@ https://hub.docker.com/
 ```
  $ docker run -d -p 3000:3000 --name node-app falcon007/node-docker:latest
 ```
+## Inspect container
+
+``` 
+docker exec -ti <container-id> /bin/sh
+```

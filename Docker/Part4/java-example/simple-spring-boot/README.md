@@ -13,6 +13,20 @@ This project is maven project which will be build using maven command.
 $ mvn clean install
 ```
 
+
+## Running
+
+The application can be start is either locally using maven or start in docker container.
+
+### Running the application in local environment
+Using eclipse:It can be run as java application or run configuration to provide the program arguments.
+You can run using maven command as:
+
+```bash
+$ mvn spring-boot:run
+```
+
+
 ## Dockerization
 
 ### Maven
@@ -33,18 +47,6 @@ docker login
 
 $ docker push <repository-name>/simple-spring-boot
 $ docker push falcon007/simple-spring-boot
-```
-
-## Running
-
-The application can be start is either locally using maven or start in docker container.
-
-### Running the application in local environment
-Using eclipse:It can be run as java application or run configuration to provide the program arguments.
-You can run using maven command as:
-
-```bash
-$ mvn spring-boot:run
 ```
 
 ### Running the application in docker container

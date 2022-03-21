@@ -107,4 +107,11 @@ https://hub.docker.com/
  $ docker run -d -p 3000:5000 --name python-app falcon007/python-docker:latest
 ```
 
+## Docker compose commands
 
+``` 
+ $ docker-compose up    #(-d) in detached mode
+ $ docker-compose logs
+ $ docker-compose ps
+ $ docker-compose down
+```

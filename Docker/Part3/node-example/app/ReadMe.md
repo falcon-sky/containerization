@@ -98,3 +98,12 @@ https://hub.docker.com/
 ``` 
 docker exec -ti <container-id> /bin/sh
 ```
+
+## Docker compose commands
+
+``` 
+ $ docker-compose up    #(-d) in detached mode
+ $ docker-compose logs
+ $ docker-compose ps
+ $ docker-compose down
+```

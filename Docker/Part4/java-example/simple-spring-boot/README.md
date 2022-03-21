@@ -2,7 +2,7 @@
 This Apllication is use understand the basic security mechanism in sprict boot application.
 
 ## Import project
-Import the project on either eclipse or inellij as a maven import project
+Import the project on either eclipse or intelij as a maven import project
 
 ## Building
 

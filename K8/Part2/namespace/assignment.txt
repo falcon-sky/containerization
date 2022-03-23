@@ -1,20 +1,20 @@
-# Create application
+# Create new application (JAVA,NODE,PYTHON)
 # Create docker image
 # Create deployment.yml
 
-1) 2 java app
+1)  java app
 /get1 : get data from java app1
 /get2 : get data from java app2  8089
 
 deploy:java-namespace
 
-2) 2 node app
+2)  node app
 /get1 : get data from node app1
 /get2 :get data from nodeapp2  3000
 
  deploy:node-namespace
 
-3) 2 python app
+3)  python app
 /get1 : get data from python app1
 /get2 : get data from python app2 5000
 

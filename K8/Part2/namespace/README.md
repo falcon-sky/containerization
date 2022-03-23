@@ -30,3 +30,10 @@ kubectl get pods -n java-namespace
 kubectl get pods -n node-namespace
 kubectl get pods -n python-namespace
 ```
+## Load Balance
+
+``` 
+kubectl expose deployment nodeapp -n node-namespace --type=LoadBalancer --name=node-service
+kubectl get services node-service -n node-namespace
+kubectl describe services rama-service
+```

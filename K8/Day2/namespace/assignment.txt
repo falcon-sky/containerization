@@ -17,4 +17,4 @@ deploy:python-namespace
 
 4) Create load balancer in namespace and access it
 
-5) Run throgh browser or curl
+5) Run through browser or curl

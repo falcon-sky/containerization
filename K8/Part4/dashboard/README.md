@@ -15,7 +15,8 @@ kubectl apply -f dashboard-adminuser.yaml
 ## Get bearer token and save to file
 
 ```
- kubectl -n kubernetes-dashboard get secret admin-user-token-vrmtj -o go-template="{{.data.token | base64decode}}" >>token.txt
+
+ kubectl -n kubernetes-dashboard get secret admin-user-token-qdcbf -o go-template="{{.data.token | base64decode}}" >>token.txt
  
 ```
 ## Start the proxy server for dash board

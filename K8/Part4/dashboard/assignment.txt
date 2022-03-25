@@ -1,0 +1,14 @@
+1) Setup you K8 dashboard
+2) Create your deployment pod (1)for app node, java,python
+3) scale python app to 2(replace)
+4) investigate in dashboard
+5) Remove all pod container
+6) Create your stateful deployment pod (1)for app node, java,python
+5) scale python app to 2(replace)
+8) investigate in dashboard
+9) Remove all pod container
+10) Create your  deployment pod (1)for app node, java,python in specific namespace(node-namespace,java,python)
+11) scale python app to 2(replace)
+12) investigate in dashboard for namespace and replicas
+13) Remove all pod container
+

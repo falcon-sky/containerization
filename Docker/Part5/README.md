@@ -1,9 +1,15 @@
-## Docker compose commands
+## Build
 
-``` 
- $ docker-compose -f docker-compose-all.yml up    #(-d) in detached mode
- $ docker-compose -f docker-compose-all.yml logs
- $ docker-compose -f docker-compose-all.yml ps
- $ docker-compose -f docker-compose-all.yml images
- $ docker-compose -f docker-compose-all.yml down
-```
+## How to run Locally(Without docker)
+
+## Test Locally
+
+## Create Image
+
+## Run docker image (without docker-compose)
+
+## Test with docker container
+
+## Run through docker-compose
+
+## Test

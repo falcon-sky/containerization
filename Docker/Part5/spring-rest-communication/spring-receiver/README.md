@@ -18,7 +18,10 @@ mvn clean install -Pjib -DjibComponent=spring-receiver -DnewVersion=1 -DskipTest
 
 docker run -p 10082:10082 --rm --name caller spring-receiver:1
 
-docker run -p 10082:10082 --network=host --rm --name receiver spring-receiver:1
-
 docker run -p 10082:10082 --add-host host.docker.internal:host-gateway --rm --name caller spring-receiver:1 
 
+## Test Docker container
+
+## Run docker compose
+
+## Test container

@@ -17,6 +17,12 @@ public class CallerController {
   @Value("${receive.url}")
   String receiveUrl;
 
+  @Value("${python.url}")
+  String pythonUrl;
+
+  @Value("${node.url}")
+  String nodeUrl;
+
   @GetMapping("/caller/get")
   public String getDetail() {
     ResponseEntity<String> response
@@ -31,4 +37,24 @@ public class CallerController {
     LOGGER.info("caller invoked");
     return "Caller get called";
   }
+
+  @GetMapping("/caller/python")
+  public String getDetail() {
+    ResponseEntity<String> response
+            = restTemplate.getForEntity(pythonUrl, String.class);
+    LOGGER.info(response.getStatusCode().toString());
+    LOGGER.info(response.getBody());
+    return "caller receive data:"+response.getBody();
+  }
+
+  @GetMapping("/caller/node")
+  public String getDetail() {
+    ResponseEntity<String> response
+            = restTemplate.getForEntity(nodeUrl, String.class);
+    LOGGER.info(response.getStatusCode().toString());
+    LOGGER.info(response.getBody());
+    return "caller receive data:"+response.getBody();
+  }
+
+
 }

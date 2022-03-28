@@ -1,0 +1,29 @@
+version: "3.9"
+services:
+  caller:
+    image: spring-caller:1
+    ports:
+      - "10081:10081"
+    environment:
+      - "python.url=http://{your-url}:5000/python"
+      - "node.url=http://{your-url}:3000/node"
+    networks:
+      - tcs-network
+
+  node-app:
+    image: falcon007/node-docker:latest
+    ports:
+      - "3000:3000"
+    networks:
+      - tcs-network
+
+  python-app:
+    image: falcon007/python-docker:latest
+    ports:
+      - "8083:5000"
+    networks:
+      - tcs-network
+
+networks:
+  tcs-network:
+    driver: bridge

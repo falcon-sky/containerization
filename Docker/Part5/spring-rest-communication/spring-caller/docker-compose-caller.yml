@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  caller:
+    image: spring-caller:1
+    ports:
+      - "10081:10081"

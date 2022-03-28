@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  receiver:
+    image: spring-receiver:1
+    ports:
+      - "10082:10082"

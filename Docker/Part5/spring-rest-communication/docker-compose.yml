@@ -4,6 +4,8 @@ services:
     image: spring-caller:1
     ports:
       - "10081:10081"
+    environment:
+      - "receive.url=http://receiver-url:10082/receiver/message"
     depends_on:
       - receiver
     networks:
@@ -14,6 +16,7 @@ services:
       - "10082:10082"
     networks:
       - tcs-network
+    hostname: receiver-url
 
 networks:
   tcs-network:

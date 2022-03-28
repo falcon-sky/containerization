@@ -1,15 +1,12 @@
-## Build
-
-## How to run Locally(Without docker)
-
-## Test Locally
-
-## Create Image
-
-## Run docker image (without docker-compose)
-
-## Test with docker container
-
 ## Run through docker-compose
+docker-compose up
 
 ## Test
+
+curl http://localhost:10081/caller
+
+curl http://localhost:10081/caller/get
+
+curl http://localhost:10082/receiver
+
+curl http://localhost:10082/receiver/message

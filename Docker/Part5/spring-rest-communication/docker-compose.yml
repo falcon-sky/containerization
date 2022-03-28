@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+  caller:
+    image: spring-caller:1
+    ports:
+      - "10081:10081"
+    depends_on:
+      - receiver
+    networks:
+      - tcs-network
+  receiver:
+    image: spring-receiver:1
+    ports:
+      - "10082:10082"
+    networks:
+      - tcs-network
+
+networks:
+  tcs-network:
+    driver: bridge
